@@ -1,0 +1,126 @@
+body {
+    margin: 0px;
+    background: #1A1919;
+    overflow: hidden;
+    box-sizing: border-box;
+    padding: 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* overflow hidden: remove o scrool da página */
+}
+
+a {
+    text-decoration: none;
+    font-size: .9rem;
+    color: #41A55B;
+}
+
+h1,
+h2,
+h3,
+p {
+    margin: 0px;
+}
+
+.logo {
+    margin: 30px;
+    position: absolute;
+}
+
+h1 {
+    display: flex;
+    gap: 10px;
+    margin-left: -6px;
+    align-content: center;
+    color: #FFF7DC;
+    padding: 5px;
+    font-size: clamp(1.2rem, 1.8vw, 3rem);
+}
+
+p {
+    color: #F4FFF7;
+    margin-right: 5px;
+    font-size: clamp(.6rem, 0.9vw, 1.9rem);
+}
+
+/* focus do formulario precionado #AD8F5D */
+
+
+.quadrado {
+    width: 50%;
+    /* margin: 60px; */
+    display: grid;
+    place-content: center;
+}
+
+main {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+}
+
+
+form {
+    background: #212121;
+    width: clamp(280px, 30vw, 480px);
+    height: clamp(280px, 30vw, 480px);
+    border-radius: 5px;
+
+}
+
+input {
+    font-size: clamp(.9rem, 1.2vw, 1.5rem);
+    padding: 10px 30px;
+    border-radius: 5px;
+    display: grid;
+    border: none;
+}
+
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    margin-top: 10px;
+    color: #FFF7DC;
+    margin-top: 15px;
+}
+
+.input-label {
+    margin-top: 30px ;
+    display: grid;
+    justify-content: center;
+}
+
+.checkbox {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.button-entrar {
+    display: grid;
+    align-items: center;
+    cursor: pointer;
+    background: #41A55B;
+    color: #03310D;
+    border: none;
+    border: ;
+    border-radius: 3px;
+    font-size: 1.2rem;
+    padding: 10px 120px;
+    margin: 30px 0px 0px 90px;
+    
+}
+
+.registrar {
+    color: #41A55B;
+    margin:10px 0px 30px 125px;
+}
+
+.carro-img {
+    width: 50%;
+}
+
+.carro-img>img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
