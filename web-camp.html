@@ -16,36 +16,53 @@
     <img class="logo" src="/images/logo.svg" alt="Logo">
 
     <main>
-        <div class="quadrado">
+        <div class="form-container">
             <form action="">
                 <div class="input-label">
                     <h1><img src="/images/log-in.svg" alt="log-in">Faça seu login</h1>
                     <p>Entre com suas informações e cadastro.</p>
 
                     <label for="email">E-mail</label>
-                    <input type="email" id="email" name="email">
+                    <div class="input-group">
+                        <img src="/images/mail.svg" alt="email-icon">
+                        <input type="email" id="email" name="email" placeholder="Digite aqui seu e-mail" required>
+                    </div>
 
-                    <label for="senha">Senha</label>
-                    <input type="password" id="senha" name="senha" maxlength="10">
+                    <label for="password">Senha</label>
+                    <div class="input-group">
+                        <img src="/images/lock.svg" alt="lock-icon">
+                        <input type="password" id="senha" name="passwordx" maxlength="10" placeholder="Digite aqui sua senha" required>
+                        <img src="/images/eye.svg" alt="eye-icon" onclick="showPassword()">
+                    </div>
                 </div>
+
                 <div class="checkbox">
-                    <input type="checkbox" id="Lembre-se" name="checkbox">
-                    <label for="Lembre-se">Lembre-se</label>
+                    <div>
+                        <input type="checkbox" id="Lembre-se" name="checkbox">
+                        <label for="Lembre-se">Lembre-se</label>
+                    </div>
                     <a href="http://"><strong>Esqueci minha senha</strong></a>
                 </div>
 
-                <button class="button-entrar">Entrar</button>
-                <p class="registrar">Não tem uma conta? <strong>Registre-se</strong></p>
+                <button>Entrar</button>
+                <p class="register">Não tem uma conta? <strong><a href="/"></a> Registre-se</strong></p>
 
             </form>
         </div>
 
-        <div class="carro-img">
+        <div class="img-car">
             <img src="/images/img-carro2.jpg" alt="Carro">
         </div>
 
     </main>
 
 </body>
+<!-- <script> 
+    let inputSenha = document.getElementById('senha')
+
+    function showPassword() {
+        inputSenha.type = 'text'
+    }
+</script> -->
 
 </html>

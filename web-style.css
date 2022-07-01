@@ -42,10 +42,7 @@ p {
     font-size: clamp(.6rem, 0.9vw, 1.9rem);
 }
 
-/* focus do formulario precionado #AD8F5D */
-
-
-.quadrado {
+.form-container {
     width: 50%;
     /* margin: 60px; */
     display: grid;
@@ -62,17 +59,24 @@ main {
 form {
     background: #212121;
     width: clamp(280px, 30vw, 480px);
-    height: clamp(280px, 30vw, 480px);
+    /* height: clamp(280px, 30vw, 480px); */
     border-radius: 5px;
-
+    padding: 30px;
 }
 
-input {
+.input-label input {
+    background: transparent;
+    color: #fff;
+    width: 100%;
+
     font-size: clamp(.9rem, 1.2vw, 1.5rem);
-    padding: 10px 30px;
-    border-radius: 5px;
     display: grid;
+    
+    padding: 10px 5px;
+    
+    border-radius: 0px 5px 5px 0px;
     border: none;
+    outline: none;
 }
 
 
@@ -85,41 +89,72 @@ label {
 }
 
 .input-label {
-    margin-top: 30px ;
     display: grid;
     justify-content: center;
 }
 
-.checkbox {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+.input-group{
+    display: flex;
+    gap: 5px;
+    padding:0px 10px;
+    background: #2F2F2F;
+    border-radius: 5px;
+
 }
 
-.button-entrar {
+.input-group:active{
+    border: 2px solid #41A55B;
+}
+
+.checkbox {
+    display: flex;
+    /* border: 3px solid #41A55B; */
+    width: 70%;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin: 10px auto;
+
+}
+
+.checkbox>div{
+    display: inherit;
+    align-items: center;
+}
+
+.checkbox>div>label{
+    margin-top: 0px;
+}
+
+input[type="checkbox"]{
+    display: block;
+}
+
+button {
     display: grid;
     align-items: center;
     cursor: pointer;
     background: #41A55B;
     color: #03310D;
     border: none;
-    border: ;
     border-radius: 3px;
     font-size: 1.2rem;
-    padding: 10px 120px;
-    margin: 30px 0px 0px 90px;
-    
+    width: 60%;
+    padding: 10px;
+    margin: 20px auto;
 }
 
-.registrar {
+.register {
     color: #41A55B;
-    margin:10px 0px 30px 125px;
+    text-align: center;
+
 }
 
-.carro-img {
+.img-car {
     width: 50%;
 }
 
-.carro-img>img {
+.img-car>img {
     width: 100%;
     height: 100%;
     object-fit: cover;
