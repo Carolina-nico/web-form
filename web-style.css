@@ -33,13 +33,13 @@ h1 {
     align-content: center;
     color: #FFF7DC;
     padding: 5px;
-    font-size: clamp(1.2rem, 1.8vw, 3rem);
+    font-size: 24px;
 }
 
 p {
     color: #F4FFF7;
     margin-right: 5px;
-    font-size: clamp(.6rem, 0.9vw, 1.9rem);
+    font-size: 14px;
 }
 
 .form-container {
@@ -69,7 +69,8 @@ form {
     color: #fff;
     width: 100%;
 
-    font-size: clamp(.9rem, 1.2vw, 1.5rem);
+    /* font-size: clamp(.9rem, 1.2vw, 1.5rem); */
+    font-size: 14px;
     display: grid;
     
     padding: 10px 5px;
@@ -93,13 +94,16 @@ label {
     justify-content: center;
 }
 
+.input-label label {
+    font-size: 16px;
+}
+
 .input-group{
     display: flex;
     gap: 5px;
     padding:0px 10px;
     background: #2F2F2F;
     border-radius: 5px;
-
 }
 
 .input-group:active{
@@ -124,6 +128,11 @@ label {
 
 .checkbox>div>label{
     margin-top: 0px;
+    font-size: 13px;
+}
+
+.checkbox>a>strong {
+    font-size: 13px;
 }
 
 input[type="checkbox"]{
@@ -141,13 +150,12 @@ button {
     font-size: 1.2rem;
     width: 60%;
     padding: 10px;
-    margin: 20px auto;
+    margin: 16px auto;
 }
 
 .register {
     color: #41A55B;
     text-align: center;
-
 }
 
 .img-car {
@@ -158,4 +166,5 @@ button {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    object-position: left;
 }
